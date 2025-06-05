@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StageQuest API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .status {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>StageQuest API Test Page</h1>
+    <p>Use this page to check if your API server is working correctly.</p>
+    
+    <div class="test-section">
+        <h2>Health Check</h2>
+        <div class="status" id="health-status">Status: Not checked</div>
+        <button onclick="testHealth()">Test API Health</button>
+        <pre id="health-result">Click the button to test...</pre>
+    </div>
+
+    <div class="test-section">
+        <h2>Verify Student</h2>
+        <div class="status" id="verify-student-status">Status: Not checked</div>
+        <button onclick="testVerifyStudent()">Test Verify Student</button>
+        <pre id="verify-student-result">Click the button to test...</pre>
+    </div>
+
+    <div class="test-section">
+        <h2>Verify Recruiter</h2>
+        <div class="status" id="verify-recruiter-status">Status: Not checked</div>
+        <button onclick="testVerifyRecruiter()">Test Verify Recruiter</button>
+        <pre id="verify-recruiter-result">Click the button to test...</pre>
+    </div>
+
+    <div class="test-section">
+        <h2>Test Registration</h2>
+        <div class="status" id="registration-status">Status: Not checked</div>
+        <button onclick="testRegistration()">Test Registration</button>
+        <pre id="registration-result">Click the button to test...</pre>
+    </div>
+
+    <script>
+        // API base URL
+        const apiUrl = 'http://localhost:3000';
+        
+        async function testHealth() {
+            const statusEl = document.getElementById('health-status');
+            const resultEl = document.getElementById('health-result');
+            
+            statusEl.textContent = 'Status: Testing...';
+            statusEl.className = 'status';
+            
+            try {
+                const response = await fetch(`${apiUrl}/api/health`);
+                const data = await response.json();
+                
+                statusEl.textContent = 'Status: Success!';
+                statusEl.className = 'status success';
+                resultEl.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                statusEl.textContent = 'Status: Error!';
+                statusEl.className = 'status error';
+                resultEl.textContent = `Error: ${error.message}`;
+            }
+        }
+        
+        async function testVerifyStudent() {
+            const statusEl = document.getElementById('verify-student-status');
+            const resultEl = document.getElementById('verify-student-result');
+            
+            statusEl.textContent = 'Status: Testing...';
+            statusEl.className = 'status';
+            
+            try {
+                const response = await fetch(`${apiUrl}/api/verify-student`, {
+                    headers: {
+                        'Authorization': 'Bearer test-token'
+                    }
+                });
+                const data = await response.json();
+                
+                statusEl.textContent = 'Status: Success!';
+                statusEl.className = 'status success';
+                resultEl.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                statusEl.textContent = 'Status: Error!';
+                statusEl.className = 'status error';
+                resultEl.textContent = `Error: ${error.message}`;
+            }
+        }
+        
+        async function testVerifyRecruiter() {
+            const statusEl = document.getElementById('verify-recruiter-status');
+            const resultEl = document.getElementById('verify-recruiter-result');
+            
+            statusEl.textContent = 'Status: Testing...';
+            statusEl.className = 'status';
+            
+            try {
+                const response = await fetch(`${apiUrl}/api/verify-recruiter`, {
+                    headers: {
+                        'Authorization': 'Bearer test-token'
+                    }
+                });
+                const data = await response.json();
+                
+                statusEl.textContent = 'Status: Success!';
+                statusEl.className = 'status success';
+                resultEl.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                statusEl.textContent = 'Status: Error!';
+                statusEl.className = 'status error';
+                resultEl.textContent = `Error: ${error.message}`;
+            }
+        }
+        
+        async function testRegistration() {
+            const statusEl = document.getElementById('registration-status');
+            const resultEl = document.getElementById('registration-result');
+            
+            statusEl.textContent = 'Status: Testing...';
+            statusEl.className = 'status';
+            
+            const testData = {
+                name: 'Test User',
+                company: 'Test Company',
+                email: 'test@example.com',
+                password: 'TestPassword123!'
+            };
+            
+            resultEl.textContent = `Sending payload:\n${JSON.stringify(testData, null, 2)}`;
+            
+            try {
+                const response = await fetch(`${apiUrl}/api/register`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(testData)
+                });
+                
+                const responseText = await response.text();
+                let data;
+                
+                try {
+                    data = JSON.parse(responseText);
+                } catch (e) {
+                    data = { raw: responseText };
+                }
+                
+                if (response.ok) {
+                    statusEl.textContent = 'Status: Success!';
+                    statusEl.className = 'status success';
+                } else {
+                    statusEl.textContent = 'Status: Error!';
+                    statusEl.className = 'status error';
+                }
+                
+                resultEl.textContent = `Response (${response.status}):\n${JSON.stringify(data, null, 2)}\n\nHeaders:\n${
+                    Object.entries(Object.fromEntries(response.headers.entries()))
+                        .map(([k, v]) => `${k}: ${v}`)
+                        .join('\n')
+                }`;
+            } catch (error) {
+                statusEl.textContent = 'Status: Error!';
+                statusEl.className = 'status error';
+                resultEl.textContent = `Network Error: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>

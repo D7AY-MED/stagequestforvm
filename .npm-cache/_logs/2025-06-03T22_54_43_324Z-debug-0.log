@@ -1,0 +1,1969 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.15.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\GG\Desktop\stagequest site 14-05\.npmrc
+5 warn config production Use `--omit=dev` instead.
+6 silly config load:file:C:\Users\GG\.npmrc
+7 silly config load:file:C:\Users\GG\AppData\Roaming\npm\etc\npmrc
+8 verbose title npm install @vitejs/plugin-react
+9 verbose argv "install" "--save-dev" "@vitejs/plugin-react"
+10 verbose logfile logs-max:10 dir:C:\Users\GG\Desktop\stagequest site 14-05\.npm-cache\_logs\2025-06-03T22_54_43_324Z-
+11 verbose logfile C:\Users\GG\Desktop\stagequest site 14-05\.npm-cache\_logs\2025-06-03T22_54_43_324Z-debug-0.log
+12 silly logfile start cleaning logs, removing 1 files
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 silly logfile done cleaning log files
+15 silly idealTree buildDeps
+16 silly fetch manifest @vitejs/plugin-react@^4.0.3
+17 silly packumentCache full:https://registry.npmjs.org/@vitejs%2fplugin-react cache-miss
+18 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+19 http fetch GET 200 https://registry.npmjs.org/@vitejs%2fplugin-react 599ms (cache miss)
+20 silly packumentCache full:https://registry.npmjs.org/@vitejs%2fplugin-react set size:undefined disposed:false
+21 silly fetch manifest vite@^4.4.5
+22 silly packumentCache full:https://registry.npmjs.org/vite cache-miss
+23 http cache https://registry.npmjs.org/vite 104ms (cache hit)
+24 silly packumentCache full:https://registry.npmjs.org/vite set size:38409091 disposed:false
+25 silly fetch manifest @types/node@^20.8.3
+26 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+27 http cache https://registry.npmjs.org/@types%2fnode 34ms (cache hit)
+28 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:10214836 disposed:false
+29 silly fetch manifest less@*
+30 silly packumentCache full:https://registry.npmjs.org/less cache-miss
+31 http cache https://registry.npmjs.org/less 12ms (cache hit)
+32 silly packumentCache full:https://registry.npmjs.org/less set size:413596 disposed:false
+33 silly fetch manifest lightningcss@^1.21.0
+34 silly packumentCache full:https://registry.npmjs.org/lightningcss cache-miss
+35 http cache https://registry.npmjs.org/lightningcss 9ms (cache hit)
+36 silly packumentCache full:https://registry.npmjs.org/lightningcss set size:169503 disposed:false
+37 silly fetch manifest sass@*
+38 silly packumentCache full:https://registry.npmjs.org/sass cache-miss
+39 http cache https://registry.npmjs.org/sass 12ms (cache hit)
+40 silly packumentCache full:https://registry.npmjs.org/sass set size:681995 disposed:false
+41 silly fetch manifest stylus@*
+42 silly packumentCache full:https://registry.npmjs.org/stylus cache-miss
+43 http cache https://registry.npmjs.org/stylus 8ms (cache hit)
+44 silly packumentCache full:https://registry.npmjs.org/stylus set size:286766 disposed:false
+45 silly fetch manifest sugarss@*
+46 silly packumentCache full:https://registry.npmjs.org/sugarss cache-miss
+47 http cache https://registry.npmjs.org/sugarss 7ms (cache hit)
+48 silly packumentCache full:https://registry.npmjs.org/sugarss set size:43245 disposed:false
+49 silly fetch manifest postcss@^8.4.31
+50 silly packumentCache full:https://registry.npmjs.org/postcss cache-miss
+51 http cache https://registry.npmjs.org/postcss 8ms (cache hit)
+52 silly packumentCache full:https://registry.npmjs.org/postcss set size:690248 disposed:false
+53 silly fetch manifest terser@^5.39.0
+54 silly packumentCache full:https://registry.npmjs.org/terser cache-miss
+55 http cache https://registry.npmjs.org/terser 7ms (cache hit)
+56 silly packumentCache full:https://registry.npmjs.org/terser set size:760459 disposed:false
+57 silly placeDep ROOT @vitejs/plugin-react@4.5.1 REPLACE for: web-app@0.0.0 want: ^4.0.3
+58 silly fetch manifest @rolldown/pluginutils@1.0.0-beta.9
+59 silly packumentCache full:https://registry.npmjs.org/@rolldown%2fpluginutils cache-miss
+60 http fetch GET 200 https://registry.npmjs.org/@rolldown%2fpluginutils 203ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/@rolldown%2fpluginutils set size:undefined disposed:false
+62 silly placeDep ROOT @rolldown/pluginutils@1.0.0-beta.9 OK for: @vitejs/plugin-react@4.5.1 want: 1.0.0-beta.9
+63 silly reify moves {}
+64 silly reify mark deleted [
+64 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@ampproject\\remapping'
+64 silly reify ]
+65 silly reify mark deleted [
+65 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\code-frame'
+65 silly reify ]
+66 silly reify mark deleted [
+66 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\compat-data'
+66 silly reify ]
+67 silly reify mark deleted [
+67 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\core'
+67 silly reify ]
+68 silly reify mark deleted [
+68 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\eslint-parser'
+68 silly reify ]
+69 silly reify mark deleted [
+69 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\eslint-parser\\node_modules\\eslint-visitor-keys'
+69 silly reify ]
+70 silly reify mark deleted [
+70 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\generator'
+70 silly reify ]
+71 silly reify mark deleted [
+71 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-annotate-as-pure'
+71 silly reify ]
+72 silly reify mark deleted [
+72 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-compilation-targets'
+72 silly reify ]
+73 silly reify mark deleted [
+73 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-create-class-features-plugin'
+73 silly reify ]
+74 silly reify mark deleted [
+74 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-create-regexp-features-plugin'
+74 silly reify ]
+75 silly reify mark deleted [
+75 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-define-polyfill-provider'
+75 silly reify ]
+76 silly reify mark deleted [
+76 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-member-expression-to-functions'
+76 silly reify ]
+77 silly reify mark deleted [
+77 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-module-imports'
+77 silly reify ]
+78 silly reify mark deleted [
+78 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-module-transforms'
+78 silly reify ]
+79 silly reify mark deleted [
+79 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-optimise-call-expression'
+79 silly reify ]
+80 silly reify mark deleted [
+80 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-plugin-utils'
+80 silly reify ]
+81 silly reify mark deleted [
+81 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-remap-async-to-generator'
+81 silly reify ]
+82 silly reify mark deleted [
+82 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-replace-supers'
+82 silly reify ]
+83 silly reify mark deleted [
+83 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-skip-transparent-expression-wrappers'
+83 silly reify ]
+84 silly reify mark deleted [
+84 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-string-parser'
+84 silly reify ]
+85 silly reify mark deleted [
+85 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-validator-identifier'
+85 silly reify ]
+86 silly reify mark deleted [
+86 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-validator-option'
+86 silly reify ]
+87 silly reify mark deleted [
+87 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helper-wrap-function'
+87 silly reify ]
+88 silly reify mark deleted [
+88 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\helpers'
+88 silly reify ]
+89 silly reify mark deleted [
+89 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\parser',
+89 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\parser',
+89 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\parser.cmd',
+89 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\parser.ps1'
+89 silly reify ]
+90 silly reify mark deleted [
+90 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-bugfix-firefox-class-in-computed-class-key'
+90 silly reify ]
+91 silly reify mark deleted [
+91 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-bugfix-safari-class-field-initializer-scope'
+91 silly reify ]
+92 silly reify mark deleted [
+92 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-bugfix-safari-id-destructuring-collision-in-function-expression'
+92 silly reify ]
+93 silly reify mark deleted [
+93 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-bugfix-v8-spread-parameters-in-optional-chaining'
+93 silly reify ]
+94 silly reify mark deleted [
+94 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-bugfix-v8-static-class-fields-redefine-readonly'
+94 silly reify ]
+95 silly reify mark deleted [
+95 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-proposal-class-properties'
+95 silly reify ]
+96 silly reify mark deleted [
+96 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-proposal-decorators'
+96 silly reify ]
+97 silly reify mark deleted [
+97 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator'
+97 silly reify ]
+98 silly reify mark deleted [
+98 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-proposal-numeric-separator'
+98 silly reify ]
+99 silly reify mark deleted [
+99 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-proposal-optional-chaining'
+99 silly reify ]
+100 silly reify mark deleted [
+100 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-proposal-private-methods'
+100 silly reify ]
+101 silly reify mark deleted [
+101 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-proposal-private-property-in-object'
+101 silly reify ]
+102 silly reify mark deleted [
+102 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-decorators'
+102 silly reify ]
+103 silly reify mark deleted [
+103 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-flow'
+103 silly reify ]
+104 silly reify mark deleted [
+104 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-import-assertions'
+104 silly reify ]
+105 silly reify mark deleted [
+105 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-import-attributes'
+105 silly reify ]
+106 silly reify mark deleted [
+106 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-jsx'
+106 silly reify ]
+107 silly reify mark deleted [
+107 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-nullish-coalescing-operator'
+107 silly reify ]
+108 silly reify mark deleted [
+108 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-numeric-separator'
+108 silly reify ]
+109 silly reify mark deleted [
+109 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-optional-chaining'
+109 silly reify ]
+110 silly reify mark deleted [
+110 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-private-property-in-object'
+110 silly reify ]
+111 silly reify mark deleted [
+111 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-typescript'
+111 silly reify ]
+112 silly reify mark deleted [
+112 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-syntax-unicode-sets-regex'
+112 silly reify ]
+113 silly reify mark deleted [
+113 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-arrow-functions'
+113 silly reify ]
+114 silly reify mark deleted [
+114 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-async-generator-functions'
+114 silly reify ]
+115 silly reify mark deleted [
+115 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-async-to-generator'
+115 silly reify ]
+116 silly reify mark deleted [
+116 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-block-scoped-functions'
+116 silly reify ]
+117 silly reify mark deleted [
+117 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-block-scoping'
+117 silly reify ]
+118 silly reify mark deleted [
+118 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-class-properties'
+118 silly reify ]
+119 silly reify mark deleted [
+119 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-class-static-block'
+119 silly reify ]
+120 silly reify mark deleted [
+120 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-classes'
+120 silly reify ]
+121 silly reify mark deleted [
+121 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-computed-properties'
+121 silly reify ]
+122 silly reify mark deleted [
+122 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-destructuring'
+122 silly reify ]
+123 silly reify mark deleted [
+123 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-dotall-regex'
+123 silly reify ]
+124 silly reify mark deleted [
+124 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-duplicate-keys'
+124 silly reify ]
+125 silly reify mark deleted [
+125 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-duplicate-named-capturing-groups-regex'
+125 silly reify ]
+126 silly reify mark deleted [
+126 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-dynamic-import'
+126 silly reify ]
+127 silly reify mark deleted [
+127 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-exponentiation-operator'
+127 silly reify ]
+128 silly reify mark deleted [
+128 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-export-namespace-from'
+128 silly reify ]
+129 silly reify mark deleted [
+129 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-flow-strip-types'
+129 silly reify ]
+130 silly reify mark deleted [
+130 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-for-of'
+130 silly reify ]
+131 silly reify mark deleted [
+131 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-function-name'
+131 silly reify ]
+132 silly reify mark deleted [
+132 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-json-strings'
+132 silly reify ]
+133 silly reify mark deleted [
+133 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-literals'
+133 silly reify ]
+134 silly reify mark deleted [
+134 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-logical-assignment-operators'
+134 silly reify ]
+135 silly reify mark deleted [
+135 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-member-expression-literals'
+135 silly reify ]
+136 silly reify mark deleted [
+136 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-modules-amd'
+136 silly reify ]
+137 silly reify mark deleted [
+137 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-modules-commonjs'
+137 silly reify ]
+138 silly reify mark deleted [
+138 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-modules-systemjs'
+138 silly reify ]
+139 silly reify mark deleted [
+139 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-modules-umd'
+139 silly reify ]
+140 silly reify mark deleted [
+140 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-named-capturing-groups-regex'
+140 silly reify ]
+141 silly reify mark deleted [
+141 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-new-target'
+141 silly reify ]
+142 silly reify mark deleted [
+142 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-nullish-coalescing-operator'
+142 silly reify ]
+143 silly reify mark deleted [
+143 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-numeric-separator'
+143 silly reify ]
+144 silly reify mark deleted [
+144 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-object-rest-spread'
+144 silly reify ]
+145 silly reify mark deleted [
+145 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-object-super'
+145 silly reify ]
+146 silly reify mark deleted [
+146 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-optional-catch-binding'
+146 silly reify ]
+147 silly reify mark deleted [
+147 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-optional-chaining'
+147 silly reify ]
+148 silly reify mark deleted [
+148 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-parameters'
+148 silly reify ]
+149 silly reify mark deleted [
+149 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-private-methods'
+149 silly reify ]
+150 silly reify mark deleted [
+150 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-private-property-in-object'
+150 silly reify ]
+151 silly reify mark deleted [
+151 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-property-literals'
+151 silly reify ]
+152 silly reify mark deleted [
+152 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-react-display-name'
+152 silly reify ]
+153 silly reify mark deleted [
+153 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-react-jsx'
+153 silly reify ]
+154 silly reify mark deleted [
+154 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-react-jsx-development'
+154 silly reify ]
+155 silly reify mark deleted [
+155 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-react-jsx-self'
+155 silly reify ]
+156 silly reify mark deleted [
+156 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-react-jsx-source'
+156 silly reify ]
+157 silly reify mark deleted [
+157 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-react-pure-annotations'
+157 silly reify ]
+158 silly reify mark deleted [
+158 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-regenerator'
+158 silly reify ]
+159 silly reify mark deleted [
+159 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-regexp-modifiers'
+159 silly reify ]
+160 silly reify mark deleted [
+160 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-reserved-words'
+160 silly reify ]
+161 silly reify mark deleted [
+161 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-runtime'
+161 silly reify ]
+162 silly reify mark deleted [
+162 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-shorthand-properties'
+162 silly reify ]
+163 silly reify mark deleted [
+163 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-spread'
+163 silly reify ]
+164 silly reify mark deleted [
+164 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-sticky-regex'
+164 silly reify ]
+165 silly reify mark deleted [
+165 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-template-literals'
+165 silly reify ]
+166 silly reify mark deleted [
+166 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-typeof-symbol'
+166 silly reify ]
+167 silly reify mark deleted [
+167 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-typescript'
+167 silly reify ]
+168 silly reify mark deleted [
+168 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-unicode-escapes'
+168 silly reify ]
+169 silly reify mark deleted [
+169 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-unicode-property-regex'
+169 silly reify ]
+170 silly reify mark deleted [
+170 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-unicode-regex'
+170 silly reify ]
+171 silly reify mark deleted [
+171 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\plugin-transform-unicode-sets-regex'
+171 silly reify ]
+172 silly reify mark deleted [
+172 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\preset-env'
+172 silly reify ]
+173 silly reify mark deleted [
+173 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\preset-env\\node_modules\\@babel\\plugin-proposal-private-property-in-object'
+173 silly reify ]
+174 silly reify mark deleted [
+174 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\preset-modules'
+174 silly reify ]
+175 silly reify mark deleted [
+175 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\preset-react'
+175 silly reify ]
+176 silly reify mark deleted [
+176 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\preset-typescript'
+176 silly reify ]
+177 silly reify mark deleted [
+177 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\template'
+177 silly reify ]
+178 silly reify mark deleted [
+178 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\traverse'
+178 silly reify ]
+179 silly reify mark deleted [
+179 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@babel\\types'
+179 silly reify ]
+180 silly reify mark deleted [
+180 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\android-arm'
+180 silly reify ]
+181 silly reify mark deleted [
+181 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\android-arm64'
+181 silly reify ]
+182 silly reify mark deleted [
+182 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\android-x64'
+182 silly reify ]
+183 silly reify mark deleted [
+183 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\darwin-arm64'
+183 silly reify ]
+184 silly reify mark deleted [
+184 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\darwin-x64'
+184 silly reify ]
+185 silly reify mark deleted [
+185 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\freebsd-arm64'
+185 silly reify ]
+186 silly reify mark deleted [
+186 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\freebsd-x64'
+186 silly reify ]
+187 silly reify mark deleted [
+187 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\linux-arm'
+187 silly reify ]
+188 silly reify mark deleted [
+188 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\linux-arm64'
+188 silly reify ]
+189 silly reify mark deleted [
+189 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\linux-ia32'
+189 silly reify ]
+190 silly reify mark deleted [
+190 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\linux-loong64'
+190 silly reify ]
+191 silly reify mark deleted [
+191 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\linux-mips64el'
+191 silly reify ]
+192 silly reify mark deleted [
+192 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\linux-ppc64'
+192 silly reify ]
+193 silly reify mark deleted [
+193 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\linux-riscv64'
+193 silly reify ]
+194 silly reify mark deleted [
+194 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\linux-s390x'
+194 silly reify ]
+195 silly reify mark deleted [
+195 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\linux-x64'
+195 silly reify ]
+196 silly reify mark deleted [
+196 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\netbsd-x64'
+196 silly reify ]
+197 silly reify mark deleted [
+197 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\openbsd-x64'
+197 silly reify ]
+198 silly reify mark deleted [
+198 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\sunos-x64'
+198 silly reify ]
+199 silly reify mark deleted [
+199 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\win32-arm64'
+199 silly reify ]
+200 silly reify mark deleted [
+200 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\win32-ia32'
+200 silly reify ]
+201 silly reify mark deleted [
+201 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@esbuild\\win32-x64'
+201 silly reify ]
+202 silly reify mark deleted [
+202 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@eslint-community\\eslint-utils'
+202 silly reify ]
+203 silly reify mark deleted [
+203 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@eslint-community\\regexpp'
+203 silly reify ]
+204 silly reify mark deleted [
+204 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@eslint\\eslintrc'
+204 silly reify ]
+205 silly reify mark deleted [
+205 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@eslint\\eslintrc\\node_modules\\globals'
+205 silly reify ]
+206 silly reify mark deleted [
+206 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@eslint\\js'
+206 silly reify ]
+207 silly reify mark deleted [
+207 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@humanwhocodes\\config-array'
+207 silly reify ]
+208 silly reify mark deleted [
+208 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@humanwhocodes\\module-importer'
+208 silly reify ]
+209 silly reify mark deleted [
+209 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@humanwhocodes\\object-schema'
+209 silly reify ]
+210 silly reify mark deleted [
+210 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@jridgewell\\source-map'
+210 silly reify ]
+211 silly reify mark deleted [
+211 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@nicolo-ribaudo\\eslint-scope-5-internals'
+211 silly reify ]
+212 silly reify mark deleted [
+212 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@nicolo-ribaudo\\eslint-scope-5-internals\\node_modules\\eslint-scope'
+212 silly reify ]
+213 silly reify mark deleted [
+213 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@nicolo-ribaudo\\eslint-scope-5-internals\\node_modules\\estraverse'
+213 silly reify ]
+214 silly reify mark deleted [
+214 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@polka\\url'
+214 silly reify ]
+215 silly reify mark deleted [
+215 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@rtsao\\scc'
+215 silly reify ]
+216 silly reify mark deleted [
+216 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@rushstack\\eslint-patch'
+216 silly reify ]
+217 silly reify mark deleted [
+217 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\accepts'
+217 silly reify ]
+218 silly reify mark deleted [
+218 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\app'
+218 silly reify ]
+219 silly reify mark deleted [
+219 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\content-disposition'
+219 silly reify ]
+220 silly reify mark deleted [
+220 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\content-type'
+220 silly reify ]
+221 silly reify mark deleted [
+221 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\cookie'
+221 silly reify ]
+222 silly reify mark deleted [
+222 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\cookie-signature'
+222 silly reify ]
+223 silly reify mark deleted [
+223 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\cors'
+223 silly reify ]
+224 silly reify mark deleted [
+224 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\encode-url'
+224 silly reify ]
+225 silly reify mark deleted [
+225 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\etag'
+225 silly reify ]
+226 silly reify mark deleted [
+226 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\forwarded'
+226 silly reify ]
+227 silly reify mark deleted [
+227 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\logger'
+227 silly reify ]
+228 silly reify mark deleted [
+228 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\proxy-addr'
+228 silly reify ]
+229 silly reify mark deleted [
+229 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\req'
+229 silly reify ]
+230 silly reify mark deleted [
+230 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\res'
+230 silly reify ]
+231 silly reify mark deleted [
+231 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\router'
+231 silly reify ]
+232 silly reify mark deleted [
+232 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\send'
+232 silly reify ]
+233 silly reify mark deleted [
+233 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\type-is'
+233 silly reify ]
+234 silly reify mark deleted [
+234 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\url'
+234 silly reify ]
+235 silly reify mark deleted [
+235 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@tinyhttp\\vary'
+235 silly reify ]
+236 silly reify mark deleted [
+236 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@types\\babel__core'
+236 silly reify ]
+237 silly reify mark deleted [
+237 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@types\\babel__generator'
+237 silly reify ]
+238 silly reify mark deleted [
+238 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@types\\babel__template'
+238 silly reify ]
+239 silly reify mark deleted [
+239 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@types\\babel__traverse'
+239 silly reify ]
+240 silly reify mark deleted [
+240 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@types\\json-schema'
+240 silly reify ]
+241 silly reify mark deleted [
+241 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@types\\json5'
+241 silly reify ]
+242 silly reify mark deleted [
+242 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@types\\parse-json'
+242 silly reify ]
+243 silly reify mark deleted [
+243 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@types\\semver'
+243 silly reify ]
+244 silly reify mark deleted [
+244 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\eslint-plugin'
+244 silly reify ]
+245 silly reify mark deleted [
+245 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\eslint-plugin\\node_modules\\semver',
+245 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\eslint-plugin\\node_modules\\.bin\\semver',
+245 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\eslint-plugin\\node_modules\\.bin\\semver.cmd',
+245 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\eslint-plugin\\node_modules\\.bin\\semver.ps1'
+245 silly reify ]
+246 silly reify mark deleted [
+246 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\experimental-utils'
+246 silly reify ]
+247 silly reify mark deleted [
+247 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\parser'
+247 silly reify ]
+248 silly reify mark deleted [
+248 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\scope-manager'
+248 silly reify ]
+249 silly reify mark deleted [
+249 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\type-utils'
+249 silly reify ]
+250 silly reify mark deleted [
+250 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\types'
+250 silly reify ]
+251 silly reify mark deleted [
+251 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\typescript-estree'
+251 silly reify ]
+252 silly reify mark deleted [
+252 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\typescript-estree\\node_modules\\semver',
+252 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\typescript-estree\\node_modules\\.bin\\semver',
+252 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\typescript-estree\\node_modules\\.bin\\semver.cmd',
+252 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\typescript-estree\\node_modules\\.bin\\semver.ps1'
+252 silly reify ]
+253 silly reify mark deleted [
+253 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\utils'
+253 silly reify ]
+254 silly reify mark deleted [
+254 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\utils\\node_modules\\eslint-scope'
+254 silly reify ]
+255 silly reify mark deleted [
+255 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\utils\\node_modules\\estraverse'
+255 silly reify ]
+256 silly reify mark deleted [
+256 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\utils\\node_modules\\semver',
+256 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\utils\\node_modules\\.bin\\semver',
+256 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\utils\\node_modules\\.bin\\semver.cmd',
+256 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\utils\\node_modules\\.bin\\semver.ps1'
+256 silly reify ]
+257 silly reify mark deleted [
+257 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@typescript-eslint\\visitor-keys'
+257 silly reify ]
+258 silly reify mark deleted [
+258 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@ungap\\structured-clone'
+258 silly reify ]
+259 silly reify mark deleted [
+259 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\acorn',
+259 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\acorn',
+259 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\acorn.cmd',
+259 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\acorn.ps1'
+259 silly reify ]
+260 silly reify mark deleted [
+260 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\acorn-jsx'
+260 silly reify ]
+261 silly reify mark deleted [ 'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\ajv' ]
+262 silly reify mark deleted [
+262 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\argparse'
+262 silly reify ]
+263 silly reify mark deleted [
+263 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\aria-query'
+263 silly reify ]
+264 silly reify mark deleted [
+264 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\array-buffer-byte-length'
+264 silly reify ]
+265 silly reify mark deleted [
+265 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\array-includes'
+265 silly reify ]
+266 silly reify mark deleted [
+266 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\array-union'
+266 silly reify ]
+267 silly reify mark deleted [
+267 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\array.prototype.findlast'
+267 silly reify ]
+268 silly reify mark deleted [
+268 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\array.prototype.findlastindex'
+268 silly reify ]
+269 silly reify mark deleted [
+269 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\array.prototype.flat'
+269 silly reify ]
+270 silly reify mark deleted [
+270 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\array.prototype.flatmap'
+270 silly reify ]
+271 silly reify mark deleted [
+271 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\array.prototype.tosorted'
+271 silly reify ]
+272 silly reify mark deleted [
+272 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\arraybuffer.prototype.slice'
+272 silly reify ]
+273 silly reify mark deleted [
+273 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\ast-types-flow'
+273 silly reify ]
+274 silly reify mark deleted [
+274 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\async-function'
+274 silly reify ]
+275 silly reify mark deleted [
+275 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\autoprefixer',
+275 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\autoprefixer',
+275 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\autoprefixer.cmd',
+275 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\autoprefixer.ps1'
+275 silly reify ]
+276 silly reify mark deleted [
+276 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\available-typed-arrays'
+276 silly reify ]
+277 silly reify mark deleted [
+277 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\axe-core'
+277 silly reify ]
+278 silly reify mark deleted [
+278 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\axobject-query'
+278 silly reify ]
+279 silly reify mark deleted [
+279 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\babel-plugin-macros'
+279 silly reify ]
+280 silly reify mark deleted [
+280 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\babel-plugin-polyfill-corejs2'
+280 silly reify ]
+281 silly reify mark deleted [
+281 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\babel-plugin-polyfill-corejs3'
+281 silly reify ]
+282 silly reify mark deleted [
+282 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\babel-plugin-polyfill-regenerator'
+282 silly reify ]
+283 silly reify mark deleted [
+283 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\babel-plugin-transform-react-remove-prop-types'
+283 silly reify ]
+284 silly reify mark deleted [
+284 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\babel-preset-react-app'
+284 silly reify ]
+285 silly reify mark deleted [
+285 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\brace-expansion'
+285 silly reify ]
+286 silly reify mark deleted [
+286 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\browserslist',
+286 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\browserslist',
+286 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\browserslist.cmd',
+286 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\browserslist.ps1'
+286 silly reify ]
+287 silly reify mark deleted [
+287 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\buffer-from'
+287 silly reify ]
+288 silly reify mark deleted [
+288 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\call-bind'
+288 silly reify ]
+289 silly reify mark deleted [
+289 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\callsites'
+289 silly reify ]
+290 silly reify mark deleted [
+290 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\caniuse-lite'
+290 silly reify ]
+291 silly reify mark deleted [
+291 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\chalk'
+291 silly reify ]
+292 silly reify mark deleted [
+292 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\colorette'
+292 silly reify ]
+293 silly reify mark deleted [
+293 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\concat-map'
+293 silly reify ]
+294 silly reify mark deleted [
+294 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\confusing-browser-globals'
+294 silly reify ]
+295 silly reify mark deleted [
+295 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\convert-source-map'
+295 silly reify ]
+296 silly reify mark deleted [
+296 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\core-js-compat'
+296 silly reify ]
+297 silly reify mark deleted [
+297 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\cosmiconfig'
+297 silly reify ]
+298 silly reify mark deleted [
+298 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\damerau-levenshtein'
+298 silly reify ]
+299 silly reify mark deleted [
+299 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\data-view-buffer'
+299 silly reify ]
+300 silly reify mark deleted [
+300 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\data-view-byte-length'
+300 silly reify ]
+301 silly reify mark deleted [
+301 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\data-view-byte-offset'
+301 silly reify ]
+302 silly reify mark deleted [
+302 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\dayjs'
+302 silly reify ]
+303 silly reify mark deleted [
+303 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\deep-is'
+303 silly reify ]
+304 silly reify mark deleted [
+304 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\define-data-property'
+304 silly reify ]
+305 silly reify mark deleted [
+305 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\define-properties'
+305 silly reify ]
+306 silly reify mark deleted [
+306 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\dir-glob'
+306 silly reify ]
+307 silly reify mark deleted [
+307 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\doctrine'
+307 silly reify ]
+308 silly reify mark deleted [
+308 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\dot-prop'
+308 silly reify ]
+309 silly reify mark deleted [
+309 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\dot-prop\\node_modules\\type-fest'
+309 silly reify ]
+310 silly reify mark deleted [
+310 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\electron-to-chromium'
+310 silly reify ]
+311 silly reify mark deleted [
+311 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\error-ex'
+311 silly reify ]
+312 silly reify mark deleted [
+312 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\es-abstract'
+312 silly reify ]
+313 silly reify mark deleted [
+313 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\es-escape-html'
+313 silly reify ]
+314 silly reify mark deleted [
+314 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\es-iterator-helpers'
+314 silly reify ]
+315 silly reify mark deleted [
+315 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\es-shim-unscopables'
+315 silly reify ]
+316 silly reify mark deleted [
+316 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\es-to-primitive'
+316 silly reify ]
+317 silly reify mark deleted [
+317 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\esbuild',
+317 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\esbuild',
+317 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\esbuild.cmd',
+317 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\esbuild.ps1'
+317 silly reify ]
+318 silly reify mark deleted [
+318 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\escalade'
+318 silly reify ]
+319 silly reify mark deleted [
+319 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\escape-string-regexp'
+319 silly reify ]
+320 silly reify mark deleted [
+320 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint',
+320 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\eslint',
+320 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\eslint.cmd',
+320 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\eslint.ps1'
+320 silly reify ]
+321 silly reify mark deleted [
+321 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-config-react-app'
+321 silly reify ]
+322 silly reify mark deleted [
+322 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-import-resolver-node'
+322 silly reify ]
+323 silly reify mark deleted [
+323 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-import-resolver-node\\node_modules\\debug'
+323 silly reify ]
+324 silly reify mark deleted [
+324 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-module-utils'
+324 silly reify ]
+325 silly reify mark deleted [
+325 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-module-utils\\node_modules\\debug'
+325 silly reify ]
+326 silly reify mark deleted [
+326 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-flowtype'
+326 silly reify ]
+327 silly reify mark deleted [
+327 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-import'
+327 silly reify ]
+328 silly reify mark deleted [
+328 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-import\\node_modules\\debug'
+328 silly reify ]
+329 silly reify mark deleted [
+329 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-import\\node_modules\\doctrine'
+329 silly reify ]
+330 silly reify mark deleted [
+330 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-jest'
+330 silly reify ]
+331 silly reify mark deleted [
+331 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-jsx-a11y'
+331 silly reify ]
+332 silly reify mark deleted [
+332 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-react'
+332 silly reify ]
+333 silly reify mark deleted [
+333 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-react-hooks'
+333 silly reify ]
+334 silly reify mark deleted [
+334 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-react\\node_modules\\doctrine'
+334 silly reify ]
+335 silly reify mark deleted [
+335 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-react\\node_modules\\resolve',
+335 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\resolve',
+335 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\resolve.cmd',
+335 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\resolve.ps1'
+335 silly reify ]
+336 silly reify mark deleted [
+336 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-plugin-testing-library'
+336 silly reify ]
+337 silly reify mark deleted [
+337 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-scope'
+337 silly reify ]
+338 silly reify mark deleted [
+338 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint-visitor-keys'
+338 silly reify ]
+339 silly reify mark deleted [
+339 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eslint\\node_modules\\globals'
+339 silly reify ]
+340 silly reify mark deleted [
+340 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\espree'
+340 silly reify ]
+341 silly reify mark deleted [
+341 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\esquery'
+341 silly reify ]
+342 silly reify mark deleted [
+342 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\esrecurse'
+342 silly reify ]
+343 silly reify mark deleted [
+343 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\estraverse'
+343 silly reify ]
+344 silly reify mark deleted [
+344 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\esutils'
+344 silly reify ]
+345 silly reify mark deleted [ 'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\eta' ]
+346 silly reify mark deleted [
+346 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\fast-deep-equal'
+346 silly reify ]
+347 silly reify mark deleted [
+347 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\fast-json-stable-stringify'
+347 silly reify ]
+348 silly reify mark deleted [
+348 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\fast-levenshtein'
+348 silly reify ]
+349 silly reify mark deleted [
+349 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\file-entry-cache'
+349 silly reify ]
+350 silly reify mark deleted [
+350 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\find-up'
+350 silly reify ]
+351 silly reify mark deleted [
+351 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\flat-cache'
+351 silly reify ]
+352 silly reify mark deleted [
+352 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\flatted'
+352 silly reify ]
+353 silly reify mark deleted [
+353 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\for-each'
+353 silly reify ]
+354 silly reify mark deleted [
+354 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\fraction.js'
+354 silly reify ]
+355 silly reify mark deleted [
+355 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\fs.realpath'
+355 silly reify ]
+356 silly reify mark deleted [
+356 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\function.prototype.name'
+356 silly reify ]
+357 silly reify mark deleted [
+357 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\functions-have-names'
+357 silly reify ]
+358 silly reify mark deleted [
+358 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\gensync'
+358 silly reify ]
+359 silly reify mark deleted [
+359 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\get-symbol-description'
+359 silly reify ]
+360 silly reify mark deleted [ 'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\glob' ]
+361 silly reify mark deleted [
+361 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\globals'
+361 silly reify ]
+362 silly reify mark deleted [
+362 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\globalthis'
+362 silly reify ]
+363 silly reify mark deleted [
+363 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\globby'
+363 silly reify ]
+364 silly reify mark deleted [
+364 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\graphemer'
+364 silly reify ]
+365 silly reify mark deleted [
+365 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\has-bigints'
+365 silly reify ]
+366 silly reify mark deleted [
+366 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\has-flag'
+366 silly reify ]
+367 silly reify mark deleted [
+367 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\has-property-descriptors'
+367 silly reify ]
+368 silly reify mark deleted [
+368 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\has-proto'
+368 silly reify ]
+369 silly reify mark deleted [
+369 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\header-range-parser'
+369 silly reify ]
+370 silly reify mark deleted [
+370 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\http-status-emojis'
+370 silly reify ]
+371 silly reify mark deleted [
+371 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\ignore'
+371 silly reify ]
+372 silly reify mark deleted [
+372 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\import-fresh'
+372 silly reify ]
+373 silly reify mark deleted [
+373 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\imurmurhash'
+373 silly reify ]
+374 silly reify mark deleted [
+374 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\inflection'
+374 silly reify ]
+375 silly reify mark deleted [
+375 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\inflight'
+375 silly reify ]
+376 silly reify mark deleted [
+376 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\internal-slot'
+376 silly reify ]
+377 silly reify mark deleted [
+377 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\ipaddr.js'
+377 silly reify ]
+378 silly reify mark deleted [
+378 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-array-buffer'
+378 silly reify ]
+379 silly reify mark deleted [
+379 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-arrayish'
+379 silly reify ]
+380 silly reify mark deleted [
+380 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-async-function'
+380 silly reify ]
+381 silly reify mark deleted [
+381 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-bigint'
+381 silly reify ]
+382 silly reify mark deleted [
+382 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-boolean-object'
+382 silly reify ]
+383 silly reify mark deleted [
+383 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-callable'
+383 silly reify ]
+384 silly reify mark deleted [
+384 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-data-view'
+384 silly reify ]
+385 silly reify mark deleted [
+385 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-date-object'
+385 silly reify ]
+386 silly reify mark deleted [
+386 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-finalizationregistry'
+386 silly reify ]
+387 silly reify mark deleted [
+387 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-generator-function'
+387 silly reify ]
+388 silly reify mark deleted [
+388 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-map'
+388 silly reify ]
+389 silly reify mark deleted [
+389 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-number-object'
+389 silly reify ]
+390 silly reify mark deleted [
+390 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-path-inside'
+390 silly reify ]
+391 silly reify mark deleted [
+391 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-regex'
+391 silly reify ]
+392 silly reify mark deleted [
+392 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-set'
+392 silly reify ]
+393 silly reify mark deleted [
+393 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-shared-array-buffer'
+393 silly reify ]
+394 silly reify mark deleted [
+394 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-string'
+394 silly reify ]
+395 silly reify mark deleted [
+395 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-symbol'
+395 silly reify ]
+396 silly reify mark deleted [
+396 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-typed-array'
+396 silly reify ]
+397 silly reify mark deleted [
+397 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-weakmap'
+397 silly reify ]
+398 silly reify mark deleted [
+398 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-weakref'
+398 silly reify ]
+399 silly reify mark deleted [
+399 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\is-weakset'
+399 silly reify ]
+400 silly reify mark deleted [
+400 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\isarray'
+400 silly reify ]
+401 silly reify mark deleted [
+401 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\iterator.prototype'
+401 silly reify ]
+402 silly reify mark deleted [
+402 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\js-yaml',
+402 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\js-yaml',
+402 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\js-yaml.cmd',
+402 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\js-yaml.ps1'
+402 silly reify ]
+403 silly reify mark deleted [
+403 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\jsesc',
+403 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\jsesc',
+403 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\jsesc.cmd',
+403 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\jsesc.ps1'
+403 silly reify ]
+404 silly reify mark deleted [
+404 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\json-buffer'
+404 silly reify ]
+405 silly reify mark deleted [
+405 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\json-parse-even-better-errors'
+405 silly reify ]
+406 silly reify mark deleted [
+406 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\json-schema-traverse'
+406 silly reify ]
+407 silly reify mark deleted [
+407 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\json-server',
+407 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\json-server',
+407 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\json-server.cmd',
+407 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\json-server.ps1'
+407 silly reify ]
+408 silly reify mark deleted [
+408 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\json-server\\node_modules\\chalk'
+408 silly reify ]
+409 silly reify mark deleted [
+409 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\json-server\\node_modules\\chokidar'
+409 silly reify ]
+410 silly reify mark deleted [
+410 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\json-server\\node_modules\\readdirp'
+410 silly reify ]
+411 silly reify mark deleted [
+411 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\json-stable-stringify-without-jsonify'
+411 silly reify ]
+412 silly reify mark deleted [
+412 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\json5',
+412 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\json5',
+412 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\json5.cmd',
+412 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\json5.ps1'
+412 silly reify ]
+413 silly reify mark deleted [
+413 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\jsx-ast-utils'
+413 silly reify ]
+414 silly reify mark deleted [ 'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\keyv' ]
+415 silly reify mark deleted [
+415 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\language-subtag-registry'
+415 silly reify ]
+416 silly reify mark deleted [
+416 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\language-tags'
+416 silly reify ]
+417 silly reify mark deleted [ 'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\levn' ]
+418 silly reify mark deleted [
+418 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\locate-path'
+418 silly reify ]
+419 silly reify mark deleted [
+419 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\lodash'
+419 silly reify ]
+420 silly reify mark deleted [
+420 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\lodash.debounce'
+420 silly reify ]
+421 silly reify mark deleted [
+421 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\lodash.merge'
+421 silly reify ]
+422 silly reify mark deleted [
+422 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\lowdb'
+422 silly reify ]
+423 silly reify mark deleted [
+423 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\lru-cache'
+423 silly reify ]
+424 silly reify mark deleted [
+424 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\milliparsec'
+424 silly reify ]
+425 silly reify mark deleted [
+425 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\mime',
+425 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\mime',
+425 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\mime.cmd',
+425 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\mime.ps1'
+425 silly reify ]
+426 silly reify mark deleted [
+426 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\minimatch'
+426 silly reify ]
+427 silly reify mark deleted [
+427 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\minimist'
+427 silly reify ]
+428 silly reify mark deleted [
+428 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\mrmime'
+428 silly reify ]
+429 silly reify mark deleted [
+429 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\natural-compare'
+429 silly reify ]
+430 silly reify mark deleted [
+430 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\natural-compare-lite'
+430 silly reify ]
+431 silly reify mark deleted [
+431 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\negotiator'
+431 silly reify ]
+432 silly reify mark deleted [
+432 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\node-releases'
+432 silly reify ]
+433 silly reify mark deleted [
+433 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\normalize-range'
+433 silly reify ]
+434 silly reify mark deleted [
+434 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\object-keys'
+434 silly reify ]
+435 silly reify mark deleted [
+435 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\object.assign'
+435 silly reify ]
+436 silly reify mark deleted [
+436 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\object.entries'
+436 silly reify ]
+437 silly reify mark deleted [
+437 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\object.fromentries'
+437 silly reify ]
+438 silly reify mark deleted [
+438 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\object.groupby'
+438 silly reify ]
+439 silly reify mark deleted [
+439 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\object.values'
+439 silly reify ]
+440 silly reify mark deleted [
+440 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\optionator'
+440 silly reify ]
+441 silly reify mark deleted [
+441 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\own-keys'
+441 silly reify ]
+442 silly reify mark deleted [
+442 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\p-limit'
+442 silly reify ]
+443 silly reify mark deleted [
+443 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\p-locate'
+443 silly reify ]
+444 silly reify mark deleted [
+444 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\parent-module'
+444 silly reify ]
+445 silly reify mark deleted [
+445 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\parse-json'
+445 silly reify ]
+446 silly reify mark deleted [
+446 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\path-exists'
+446 silly reify ]
+447 silly reify mark deleted [
+447 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\path-is-absolute'
+447 silly reify ]
+448 silly reify mark deleted [
+448 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\path-type'
+448 silly reify ]
+449 silly reify mark deleted [
+449 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\possible-typed-array-names'
+449 silly reify ]
+450 silly reify mark deleted [
+450 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\prelude-ls'
+450 silly reify ]
+451 silly reify mark deleted [
+451 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\prop-types'
+451 silly reify ]
+452 silly reify mark deleted [
+452 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\punycode'
+452 silly reify ]
+453 silly reify mark deleted [
+453 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\react-is'
+453 silly reify ]
+454 silly reify mark deleted [
+454 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\react-refresh'
+454 silly reify ]
+455 silly reify mark deleted [
+455 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\reflect.getprototypeof'
+455 silly reify ]
+456 silly reify mark deleted [
+456 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regenerate'
+456 silly reify ]
+457 silly reify mark deleted [
+457 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regenerate-unicode-properties'
+457 silly reify ]
+458 silly reify mark deleted [
+458 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regenerator-transform'
+458 silly reify ]
+459 silly reify mark deleted [
+459 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regexp.prototype.flags'
+459 silly reify ]
+460 silly reify mark deleted [
+460 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regexparam'
+460 silly reify ]
+461 silly reify mark deleted [
+461 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regexpu-core'
+461 silly reify ]
+462 silly reify mark deleted [
+462 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regjsgen'
+462 silly reify ]
+463 silly reify mark deleted [
+463 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regjsparser',
+463 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\regjsparser',
+463 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\regjsparser.cmd',
+463 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\regjsparser.ps1'
+463 silly reify ]
+464 silly reify mark deleted [
+464 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regjsparser\\node_modules\\jsesc',
+464 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regjsparser\\node_modules\\.bin\\jsesc',
+464 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regjsparser\\node_modules\\.bin\\jsesc.cmd',
+464 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\regjsparser\\node_modules\\.bin\\jsesc.ps1'
+464 silly reify ]
+465 silly reify mark deleted [
+465 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\resolve-from'
+465 silly reify ]
+466 silly reify mark deleted [
+466 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\rimraf',
+466 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\rimraf',
+466 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\rimraf.cmd',
+466 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\rimraf.ps1'
+466 silly reify ]
+467 silly reify mark deleted [
+467 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\rollup',
+467 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\rollup',
+467 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\rollup.cmd',
+467 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\rollup.ps1'
+467 silly reify ]
+468 silly reify mark deleted [
+468 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\safe-array-concat'
+468 silly reify ]
+469 silly reify mark deleted [
+469 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\safe-push-apply'
+469 silly reify ]
+470 silly reify mark deleted [
+470 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\safe-regex-test'
+470 silly reify ]
+471 silly reify mark deleted [
+471 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\semver',
+471 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\semver',
+471 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\semver.cmd',
+471 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\semver.ps1'
+471 silly reify ]
+472 silly reify mark deleted [
+472 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\set-function-length'
+472 silly reify ]
+473 silly reify mark deleted [
+473 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\set-function-name'
+473 silly reify ]
+474 silly reify mark deleted [
+474 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\set-proto'
+474 silly reify ]
+475 silly reify mark deleted [ 'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\sirv' ]
+476 silly reify mark deleted [
+476 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\slash'
+476 silly reify ]
+477 silly reify mark deleted [
+477 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\sort-on'
+477 silly reify ]
+478 silly reify mark deleted [
+478 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\source-map'
+478 silly reify ]
+479 silly reify mark deleted [
+479 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\source-map-support'
+479 silly reify ]
+480 silly reify mark deleted [
+480 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\steno'
+480 silly reify ]
+481 silly reify mark deleted [
+481 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\string-natural-compare'
+481 silly reify ]
+482 silly reify mark deleted [
+482 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\string.prototype.includes'
+482 silly reify ]
+483 silly reify mark deleted [
+483 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\string.prototype.matchall'
+483 silly reify ]
+484 silly reify mark deleted [
+484 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\string.prototype.repeat'
+484 silly reify ]
+485 silly reify mark deleted [
+485 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\string.prototype.trim'
+485 silly reify ]
+486 silly reify mark deleted [
+486 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\string.prototype.trimend'
+486 silly reify ]
+487 silly reify mark deleted [
+487 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\string.prototype.trimstart'
+487 silly reify ]
+488 silly reify mark deleted [
+488 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\strip-bom'
+488 silly reify ]
+489 silly reify mark deleted [
+489 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\strip-json-comments'
+489 silly reify ]
+490 silly reify mark deleted [
+490 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\supports-color'
+490 silly reify ]
+491 silly reify mark deleted [
+491 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\terser',
+491 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\terser',
+491 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\terser.cmd',
+491 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\terser.ps1'
+491 silly reify ]
+492 silly reify mark deleted [
+492 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\terser\\node_modules\\commander'
+492 silly reify ]
+493 silly reify mark deleted [
+493 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\text-table'
+493 silly reify ]
+494 silly reify mark deleted [
+494 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\totalist'
+494 silly reify ]
+495 silly reify mark deleted [
+495 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\tsconfig-paths'
+495 silly reify ]
+496 silly reify mark deleted [
+496 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\tsconfig-paths\\node_modules\\json5',
+496 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\tsconfig-paths\\node_modules\\.bin\\json5',
+496 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\tsconfig-paths\\node_modules\\.bin\\json5.cmd',
+496 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\tsconfig-paths\\node_modules\\.bin\\json5.ps1'
+496 silly reify ]
+497 silly reify mark deleted [
+497 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\tsutils'
+497 silly reify ]
+498 silly reify mark deleted [
+498 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\tsutils\\node_modules\\tslib'
+498 silly reify ]
+499 silly reify mark deleted [
+499 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\type-check'
+499 silly reify ]
+500 silly reify mark deleted [
+500 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\type-fest'
+500 silly reify ]
+501 silly reify mark deleted [
+501 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\typed-array-buffer'
+501 silly reify ]
+502 silly reify mark deleted [
+502 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\typed-array-byte-length'
+502 silly reify ]
+503 silly reify mark deleted [
+503 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\typed-array-byte-offset'
+503 silly reify ]
+504 silly reify mark deleted [
+504 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\typed-array-length'
+504 silly reify ]
+505 silly reify mark deleted [
+505 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\unbox-primitive'
+505 silly reify ]
+506 silly reify mark deleted [
+506 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\unicode-canonical-property-names-ecmascript'
+506 silly reify ]
+507 silly reify mark deleted [
+507 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\unicode-match-property-ecmascript'
+507 silly reify ]
+508 silly reify mark deleted [
+508 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\unicode-match-property-value-ecmascript'
+508 silly reify ]
+509 silly reify mark deleted [
+509 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\unicode-property-aliases-ecmascript'
+509 silly reify ]
+510 silly reify mark deleted [
+510 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\update-browserslist-db',
+510 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\update-browserslist-db',
+510 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\update-browserslist-db.cmd',
+510 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\update-browserslist-db.ps1'
+510 silly reify ]
+511 silly reify mark deleted [
+511 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\uri-js'
+511 silly reify ]
+512 silly reify mark deleted [
+512 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\vite',
+512 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\vite',
+512 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\vite.cmd',
+512 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\.bin\\vite.ps1'
+512 silly reify ]
+513 silly reify mark deleted [
+513 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\which-boxed-primitive'
+513 silly reify ]
+514 silly reify mark deleted [
+514 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\which-builtin-type'
+514 silly reify ]
+515 silly reify mark deleted [
+515 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\which-collection'
+515 silly reify ]
+516 silly reify mark deleted [
+516 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\which-typed-array'
+516 silly reify ]
+517 silly reify mark deleted [
+517 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\word-wrap'
+517 silly reify ]
+518 silly reify mark deleted [
+518 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\yallist'
+518 silly reify ]
+519 silly reify mark deleted [ 'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\yaml' ]
+520 silly reify mark deleted [
+520 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\yocto-queue'
+520 silly reify ]
+521 silly reify mark deleted [
+521 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@vitejs\\plugin-react'
+521 silly reify ]
+522 silly reify mark deleted [
+522 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\@rolldown\\pluginutils'
+522 silly reify ]
+523 verbose reify failed optional dependency C:\Users\GG\Desktop\stagequest site 14-05\node_modules\fsevents
+524 silly reify mark deleted [
+524 silly reify   'C:\\Users\\GG\\Desktop\\stagequest site 14-05\\node_modules\\fsevents'
+524 silly reify ]
+525 silly ADD
+526 silly ADD
+527 silly ADD
+528 silly ADD
+529 silly ADD
+530 silly ADD
+531 silly ADD
+532 silly ADD
+533 silly ADD
+534 silly ADD
+535 silly ADD
+536 silly ADD
+537 silly ADD
+538 silly ADD
+539 silly ADD
+540 silly ADD
+541 silly ADD
+542 silly ADD
+543 silly ADD
+544 silly ADD
+545 silly ADD
+546 silly ADD
+547 silly ADD
+548 silly ADD
+549 silly ADD
+550 silly ADD node_modules/tslib
+551 silly ADD
+552 silly ADD node_modules/json5
+553 silly ADD
+554 silly ADD
+555 silly ADD
+556 silly ADD node_modules/commander
+557 silly ADD
+558 silly ADD
+559 silly ADD
+560 silly ADD
+561 silly ADD
+562 silly ADD
+563 silly ADD
+564 silly ADD
+565 silly ADD
+566 silly ADD
+567 silly ADD
+568 silly ADD
+569 silly ADD
+570 silly ADD
+571 silly ADD
+572 silly ADD
+573 silly ADD
+574 silly ADD
+575 silly ADD
+576 silly ADD
+577 silly ADD
+578 silly ADD
+579 silly ADD
+580 silly ADD
+581 silly ADD
+582 silly ADD
+583 silly ADD
+584 silly ADD node_modules/jsesc
+585 silly ADD
+586 silly ADD
+587 silly ADD
+588 silly ADD
+589 silly ADD
+590 silly ADD
+591 silly ADD
+592 silly ADD
+593 silly ADD
+594 silly ADD
+595 silly ADD
+596 silly ADD
+597 silly ADD
+598 silly ADD
+599 silly ADD
+600 silly ADD
+601 silly ADD
+602 silly ADD
+603 silly ADD
+604 silly ADD
+605 silly ADD
+606 silly ADD
+607 silly ADD
+608 silly ADD
+609 silly ADD
+610 silly ADD
+611 silly ADD
+612 silly ADD
+613 silly ADD
+614 silly ADD
+615 silly ADD
+616 silly ADD
+617 silly ADD
+618 silly ADD
+619 silly ADD
+620 silly ADD
+621 silly ADD
+622 silly ADD
+623 silly ADD
+624 silly ADD
+625 silly ADD
+626 silly ADD
+627 silly ADD
+628 silly ADD
+629 silly ADD
+630 silly ADD
+631 silly ADD
+632 silly ADD
+633 silly ADD
+634 silly ADD
+635 silly ADD
+636 silly ADD
+637 silly ADD
+638 silly ADD node_modules/readdirp
+639 silly ADD node_modules/chokidar
+640 silly ADD node_modules/chalk
+641 silly ADD
+642 silly ADD
+643 silly ADD
+644 silly ADD
+645 silly ADD
+646 silly ADD
+647 silly ADD
+648 silly ADD
+649 silly ADD
+650 silly ADD
+651 silly ADD
+652 silly ADD
+653 silly ADD
+654 silly ADD
+655 silly ADD
+656 silly ADD
+657 silly ADD
+658 silly ADD
+659 silly ADD
+660 silly ADD
+661 silly ADD
+662 silly ADD
+663 silly ADD
+664 silly ADD
+665 silly ADD
+666 silly ADD
+667 silly ADD
+668 silly ADD
+669 silly ADD
+670 silly ADD
+671 silly ADD
+672 silly ADD
+673 silly ADD
+674 silly ADD
+675 silly ADD
+676 silly ADD
+677 silly ADD
+678 silly ADD
+679 silly ADD
+680 silly ADD
+681 silly ADD
+682 silly ADD
+683 silly ADD
+684 silly ADD
+685 silly ADD
+686 silly ADD
+687 silly ADD
+688 silly ADD
+689 silly ADD
+690 silly ADD
+691 silly ADD
+692 silly ADD
+693 silly ADD
+694 silly ADD
+695 silly ADD
+696 silly ADD
+697 silly ADD
+698 silly ADD
+699 silly ADD
+700 silly ADD
+701 silly ADD
+702 silly ADD
+703 silly ADD
+704 silly ADD
+705 silly ADD
+706 silly ADD
+707 silly ADD
+708 silly ADD
+709 silly ADD
+710 silly ADD
+711 silly ADD
+712 silly ADD
+713 silly ADD
+714 silly ADD node_modules/resolve
+715 silly ADD node_modules/doctrine
+716 silly ADD
+717 silly ADD
+718 silly ADD
+719 silly ADD node_modules/doctrine
+720 silly ADD node_modules/debug
+721 silly ADD
+722 silly ADD
+723 silly ADD node_modules/debug
+724 silly ADD
+725 silly ADD node_modules/debug
+726 silly ADD
+727 silly ADD
+728 silly ADD node_modules/globals
+729 silly ADD
+730 silly ADD
+731 silly ADD
+732 silly ADD
+733 silly ADD
+734 silly ADD
+735 silly ADD
+736 silly ADD
+737 silly ADD
+738 silly ADD
+739 silly ADD
+740 silly ADD node_modules/type-fest
+741 silly ADD
+742 silly ADD
+743 silly ADD
+744 silly ADD
+745 silly ADD
+746 silly ADD
+747 silly ADD
+748 silly ADD
+749 silly ADD
+750 silly ADD
+751 silly ADD
+752 silly ADD
+753 silly ADD
+754 silly ADD
+755 silly ADD
+756 silly ADD
+757 silly ADD
+758 silly ADD
+759 silly ADD
+760 silly ADD
+761 silly ADD
+762 silly ADD
+763 silly ADD
+764 silly ADD
+765 silly ADD
+766 silly ADD
+767 silly ADD
+768 silly ADD
+769 silly ADD
+770 silly ADD
+771 silly ADD
+772 silly ADD
+773 silly ADD
+774 silly ADD
+775 silly ADD
+776 silly ADD
+777 silly ADD
+778 silly ADD
+779 silly ADD
+780 silly ADD
+781 silly ADD
+782 silly ADD
+783 silly ADD
+784 silly ADD
+785 silly ADD
+786 silly ADD
+787 silly ADD
+788 silly ADD
+789 silly ADD
+790 silly ADD
+791 silly ADD
+792 silly ADD
+793 silly ADD node_modules/semver
+794 silly ADD node_modules/estraverse
+795 silly ADD node_modules/eslint-scope
+796 silly ADD
+797 silly ADD node_modules/semver
+798 silly ADD
+799 silly ADD
+800 silly ADD
+801 silly ADD
+802 silly ADD
+803 silly ADD
+804 silly ADD node_modules/semver
+805 silly ADD
+806 silly ADD
+807 silly ADD
+808 silly ADD
+809 silly ADD
+810 silly ADD
+811 silly ADD
+812 silly ADD
+813 silly ADD
+814 silly ADD
+815 silly ADD
+816 silly ADD
+817 silly ADD
+818 silly ADD
+819 silly ADD
+820 silly ADD
+821 silly ADD
+822 silly ADD
+823 silly ADD
+824 silly ADD
+825 silly ADD
+826 silly ADD
+827 silly ADD
+828 silly ADD
+829 silly ADD
+830 silly ADD
+831 silly ADD
+832 silly ADD
+833 silly ADD
+834 silly ADD
+835 silly ADD
+836 silly ADD node_modules/estraverse
+837 silly ADD node_modules/eslint-scope
+838 silly ADD
+839 silly ADD
+840 silly ADD
+841 silly ADD
+842 silly ADD
+843 silly ADD
+844 silly ADD node_modules/globals
+845 silly ADD
+846 silly ADD
+847 silly ADD
+848 silly ADD
+849 silly ADD
+850 silly ADD
+851 silly ADD
+852 silly ADD
+853 silly ADD
+854 silly ADD
+855 silly ADD
+856 silly ADD
+857 silly ADD
+858 silly ADD
+859 silly ADD
+860 silly ADD
+861 silly ADD
+862 silly ADD
+863 silly ADD
+864 silly ADD
+865 silly ADD
+866 silly ADD
+867 silly ADD
+868 silly ADD
+869 silly ADD
+870 silly ADD
+871 silly ADD
+872 silly ADD
+873 silly ADD
+874 silly ADD
+875 silly ADD
+876 silly ADD node_modules/@babel/plugin-proposal-private-property-in-object
+877 silly ADD
+878 silly ADD
+879 silly ADD
+880 silly ADD
+881 silly ADD
+882 silly ADD
+883 silly ADD
+884 silly ADD
+885 silly ADD
+886 silly ADD
+887 silly ADD
+888 silly ADD
+889 silly ADD
+890 silly ADD
+891 silly ADD
+892 silly ADD
+893 silly ADD
+894 silly ADD
+895 silly ADD
+896 silly ADD
+897 silly ADD
+898 silly ADD
+899 silly ADD
+900 silly ADD
+901 silly ADD
+902 silly ADD
+903 silly ADD
+904 silly ADD
+905 silly ADD
+906 silly ADD
+907 silly ADD
+908 silly ADD
+909 silly ADD
+910 silly ADD
+911 silly ADD
+912 silly ADD
+913 silly ADD
+914 silly ADD
+915 silly ADD
+916 silly ADD
+917 silly ADD
+918 silly ADD
+919 silly ADD
+920 silly ADD
+921 silly ADD
+922 silly ADD
+923 silly ADD
+924 silly ADD
+925 silly ADD
+926 silly ADD
+927 silly ADD
+928 silly ADD
+929 silly ADD
+930 silly ADD
+931 silly ADD
+932 silly ADD
+933 silly ADD
+934 silly ADD
+935 silly ADD
+936 silly ADD
+937 silly ADD
+938 silly ADD
+939 silly ADD
+940 silly ADD
+941 silly ADD
+942 silly ADD
+943 silly ADD
+944 silly ADD
+945 silly ADD
+946 silly ADD
+947 silly ADD
+948 silly ADD
+949 silly ADD
+950 silly ADD
+951 silly ADD
+952 silly ADD
+953 silly ADD
+954 silly ADD
+955 silly ADD
+956 silly ADD
+957 silly ADD
+958 silly ADD
+959 silly ADD
+960 silly ADD
+961 silly ADD
+962 silly ADD
+963 silly ADD
+964 silly ADD
+965 silly ADD
+966 silly ADD
+967 silly ADD
+968 silly ADD
+969 silly ADD
+970 silly ADD
+971 silly ADD
+972 silly ADD
+973 silly ADD
+974 silly ADD
+975 silly ADD
+976 silly ADD
+977 silly ADD
+978 silly ADD
+979 silly ADD
+980 silly ADD node_modules/eslint-visitor-keys
+981 silly ADD
+982 silly ADD
+983 silly ADD
+984 silly ADD
+985 verbose cwd C:\Users\GG\Desktop\stagequest site 14-05
+986 verbose os Windows_NT 10.0.19045
+987 verbose node v22.15.0
+988 verbose npm  v10.9.2
+989 verbose exit 0
+990 info ok

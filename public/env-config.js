@@ -1,0 +1,10 @@
+// This file is for local development
+// In the Docker container, this file will be dynamically generated
+window.ENV = {
+  "VITE_API_URL": "http://localhost:3000",
+  "IS_DOCKER": false,
+  "VITE_STUDENT_SUPABASE_URL": "https://merambntyjutvpocjyin.supabase.co",
+  "VITE_STUDENT_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1lcmFtYm50eWp1dHZwb2NqeWluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU3MTIyNTMsImV4cCI6MjA2MTI4ODI1M30.NSB7wKx5AKND5jK-PTKY-AQRVHmpxtCBGaIsEUuQ0MI",
+  "REACT_APP_AZURE_CLIENT_ID": "dad8c5ba-b384-42da-946e-3bc8ebfdb1d2",
+  "REACT_APP_AZURE_TENANT_ID": "748c584f-0cee-4bb9-addb-f12ec194e7c9"
+};
