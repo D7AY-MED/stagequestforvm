@@ -1,0 +1,20 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.15.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\GG\Desktop\stagequest site 14-05\.npmrc
+5 warn config production Use `--omit=dev` instead.
+6 silly config load:file:C:\Users\GG\.npmrc
+7 silly config load:file:C:\Users\GG\AppData\Roaming\npm\etc\npmrc
+8 verbose title npm run build
+9 verbose argv "run" "build"
+10 verbose logfile logs-max:10 dir:C:\Users\GG\Desktop\stagequest site 14-05\.npm-cache\_logs\2025-06-06T00_04_17_548Z-
+11 verbose logfile C:\Users\GG\Desktop\stagequest site 14-05\.npm-cache\_logs\2025-06-06T00_04_17_548Z-debug-0.log
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 verbose cwd C:\Users\GG\Desktop\stagequest site 14-05
+15 verbose os Windows_NT 10.0.19045
+16 verbose node v22.15.0
+17 verbose npm  v10.9.2
+18 verbose exit 1
+19 verbose code 1

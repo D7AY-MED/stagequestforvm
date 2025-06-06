@@ -1,0 +1,23 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.15.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\GG\Desktop\stagequest site 14-05\.npmrc
+5 warn config production Use `--omit=dev` instead.
+6 silly config load:file:C:\Users\GG\.npmrc
+7 silly config load:file:C:\Users\GG\AppData\Roaming\npm\etc\npmrc
+8 verbose title npm install
+9 verbose argv "install"
+10 verbose logfile logs-max:10 dir:C:\Users\GG\Desktop\stagequest site 14-05\.npm-cache\_logs\2025-06-06T00_18_45_946Z-
+11 verbose logfile C:\Users\GG\Desktop\stagequest site 14-05\.npm-cache\_logs\2025-06-06T00_18_45_946Z-debug-0.log
+12 silly logfile start cleaning logs, removing 1 files
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 silly logfile done cleaning log files
+15 silly idealTree buildDeps
+16 silly fetch manifest react-router-dom@^6.20.0
+17 silly packumentCache full:https://registry.npmjs.org/react-router-dom cache-miss
+18 http fetch GET https://registry.npmjs.org/react-router-dom attempt 1 failed with ETIMEDOUT
+19 http fetch GET https://registry.npmjs.org/react-router-dom attempt 2 failed with ETIMEDOUT
+20 http fetch GET https://registry.npmjs.org/react-router-dom attempt 3 failed with ETIMEDOUT
+21 silly fetch manifest eslint-plugin-react-refresh@^0.4.4
+22 silly packumentCache full:https://registry.npmjs.org/eslint-plugin-react-refresh cache-miss

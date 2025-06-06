@@ -26,6 +26,8 @@
             padding: 10px;
             border-radius: 4px;
             overflow-x: auto;
+            max-height: 400px;
+            overflow-y: auto;
         }
         .status {
             font-weight: bold;
@@ -37,35 +39,47 @@
         .error {
             color: red;
         }
+        .panel {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            font-family: monospace;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>StageQuest API Test Page</h1>
     <p>Use this page to check if your API server is working correctly.</p>
     
-    <div class="test-section">
+    <div class="panel">
+        <h2>API Configuration</h2>
+        <p>Current API URL: <code id="current-api-url">http://localhost:3000</code></p>
+        <input type="text" id="api-url-input" value="http://localhost:3000" style="width:300px">
+        <button onclick="updateApiUrl()">Update API URL</button>
+    </div>
+    
+    <div class="panel">
         <h2>Health Check</h2>
         <div class="status" id="health-status">Status: Not checked</div>
         <button onclick="testHealth()">Test API Health</button>
         <pre id="health-result">Click the button to test...</pre>
     </div>
 
-    <div class="test-section">
-        <h2>Verify Student</h2>
-        <div class="status" id="verify-student-status">Status: Not checked</div>
-        <button onclick="testVerifyStudent()">Test Verify Student</button>
-        <pre id="verify-student-result">Click the button to test...</pre>
-    </div>
-
-    <div class="test-section">
-        <h2>Verify Recruiter</h2>
-        <div class="status" id="verify-recruiter-status">Status: Not checked</div>
-        <button onclick="testVerifyRecruiter()">Test Verify Recruiter</button>
-        <pre id="verify-recruiter-result">Click the button to test...</pre>
-    </div>
-
-    <div class="test-section">
+    <div class="panel">
         <h2>Test Registration</h2>
+        <p>Edit the registration payload below:</p>
+        <textarea id="registration-payload">{
+  "name": "Test User",
+  "company": "Test Company",
+  "email": "test@example.com",
+  "password": "TestPassword123!"
+}</textarea>
         <div class="status" id="registration-status">Status: Not checked</div>
         <button onclick="testRegistration()">Test Registration</button>
         <pre id="registration-result">Click the button to test...</pre>
@@ -73,7 +87,16 @@
 
     <script>
         // API base URL
-        const apiUrl = 'http://localhost:3000';
+        let apiUrl = 'http://localhost:3000';
+        
+        function updateApiUrl() {
+            const newUrl = document.getElementById('api-url-input').value.trim();
+            if (newUrl) {
+                apiUrl = newUrl;
+                document.getElementById('current-api-url').textContent = apiUrl;
+                console.log('API URL updated to:', apiUrl);
+            }
+        }
         
         async function testHealth() {
             const statusEl = document.getElementById('health-status');
@@ -83,86 +106,63 @@
             statusEl.className = 'status';
             
             try {
+                const startTime = performance.now();
                 const response = await fetch(`${apiUrl}/api/health`);
-                const data = await response.json();
+                const endTime = performance.now();
+                const responseTime = (endTime - startTime).toFixed(2);
                 
-                statusEl.textContent = 'Status: Success!';
-                statusEl.className = 'status success';
-                resultEl.textContent = JSON.stringify(data, null, 2);
+                let data;
+                try {
+                    data = await response.json();
+                } catch (e) {
+                    const text = await response.text();
+                    data = { error: 'Not valid JSON', raw: text };
+                }
+                
+                if (response.ok) {
+                    statusEl.textContent = `Status: Success! (${responseTime}ms)`;
+                    statusEl.className = 'status success';
+                } else {
+                    statusEl.textContent = `Status: Error! (${response.status})`;
+                    statusEl.className = 'status error';
+                }
+                
+                resultEl.textContent = JSON.stringify({
+                    status: response.status,
+                    statusText: response.statusText,
+                    responseTime: `${responseTime}ms`,
+                    headers: Object.fromEntries([...response.headers]),
+                    body: data
+                }, null, 2);
             } catch (error) {
                 statusEl.textContent = 'Status: Error!';
                 statusEl.className = 'status error';
-                resultEl.textContent = `Error: ${error.message}`;
-            }
-        }
-        
-        async function testVerifyStudent() {
-            const statusEl = document.getElementById('verify-student-status');
-            const resultEl = document.getElementById('verify-student-result');
-            
-            statusEl.textContent = 'Status: Testing...';
-            statusEl.className = 'status';
-            
-            try {
-                const response = await fetch(`${apiUrl}/api/verify-student`, {
-                    headers: {
-                        'Authorization': 'Bearer test-token'
-                    }
-                });
-                const data = await response.json();
-                
-                statusEl.textContent = 'Status: Success!';
-                statusEl.className = 'status success';
-                resultEl.textContent = JSON.stringify(data, null, 2);
-            } catch (error) {
-                statusEl.textContent = 'Status: Error!';
-                statusEl.className = 'status error';
-                resultEl.textContent = `Error: ${error.message}`;
-            }
-        }
-        
-        async function testVerifyRecruiter() {
-            const statusEl = document.getElementById('verify-recruiter-status');
-            const resultEl = document.getElementById('verify-recruiter-result');
-            
-            statusEl.textContent = 'Status: Testing...';
-            statusEl.className = 'status';
-            
-            try {
-                const response = await fetch(`${apiUrl}/api/verify-recruiter`, {
-                    headers: {
-                        'Authorization': 'Bearer test-token'
-                    }
-                });
-                const data = await response.json();
-                
-                statusEl.textContent = 'Status: Success!';
-                statusEl.className = 'status success';
-                resultEl.textContent = JSON.stringify(data, null, 2);
-            } catch (error) {
-                statusEl.textContent = 'Status: Error!';
-                statusEl.className = 'status error';
-                resultEl.textContent = `Error: ${error.message}`;
+                resultEl.textContent = `Network Error: ${error.message}\n\nIs the API server running? Check that:\n1. You've started the server with 'npm start'\n2. The server is running on the correct port\n3. CORS is properly configured on the server`;
             }
         }
         
         async function testRegistration() {
             const statusEl = document.getElementById('registration-status');
             const resultEl = document.getElementById('registration-result');
+            const payloadEl = document.getElementById('registration-payload');
             
             statusEl.textContent = 'Status: Testing...';
             statusEl.className = 'status';
             
-            const testData = {
-                name: 'Test User',
-                company: 'Test Company',
-                email: 'test@example.com',
-                password: 'TestPassword123!'
-            };
+            let testData;
+            try {
+                testData = JSON.parse(payloadEl.value);
+            } catch (e) {
+                statusEl.textContent = 'Status: Invalid JSON!';
+                statusEl.className = 'status error';
+                resultEl.textContent = `Error parsing JSON: ${e.message}`;
+                return;
+            }
             
-            resultEl.textContent = `Sending payload:\n${JSON.stringify(testData, null, 2)}`;
+            resultEl.textContent = `Sending request to ${apiUrl}/api/register\nPayload: ${JSON.stringify(testData, null, 2)}`;
             
             try {
+                const startTime = performance.now();
                 const response = await fetch(`${apiUrl}/api/register`, {
                     method: 'POST',
                     headers: {
@@ -171,6 +171,8 @@
                     },
                     body: JSON.stringify(testData)
                 });
+                const endTime = performance.now();
+                const responseTime = (endTime - startTime).toFixed(2);
                 
                 const responseText = await response.text();
                 let data;
@@ -178,26 +180,31 @@
                 try {
                     data = JSON.parse(responseText);
                 } catch (e) {
-                    data = { raw: responseText };
+                    data = { 
+                        error: 'Failed to parse JSON response',
+                        raw: responseText.substring(0, 1000) + (responseText.length > 1000 ? '...' : '')
+                    };
                 }
                 
                 if (response.ok) {
-                    statusEl.textContent = 'Status: Success!';
+                    statusEl.textContent = `Status: Success! (${responseTime}ms)`;
                     statusEl.className = 'status success';
                 } else {
-                    statusEl.textContent = 'Status: Error!';
+                    statusEl.textContent = `Status: Error! (${response.status})`;
                     statusEl.className = 'status error';
                 }
                 
-                resultEl.textContent = `Response (${response.status}):\n${JSON.stringify(data, null, 2)}\n\nHeaders:\n${
-                    Object.entries(Object.fromEntries(response.headers.entries()))
-                        .map(([k, v]) => `${k}: ${v}`)
-                        .join('\n')
-                }`;
+                resultEl.textContent = JSON.stringify({
+                    status: response.status,
+                    statusText: response.statusText,
+                    responseTime: `${responseTime}ms`,
+                    headers: Object.fromEntries([...response.headers]),
+                    body: data
+                }, null, 2);
             } catch (error) {
-                statusEl.textContent = 'Status: Error!';
+                statusEl.textContent = 'Status: Network Error!';
                 statusEl.className = 'status error';
-                resultEl.textContent = `Network Error: ${error.message}`;
+                resultEl.textContent = `Network Error: ${error.message}\n\nPossible causes:\n1. API server is not running\n2. CORS is not enabled on the server\n3. Network connection issue`;
             }
         }
     </script>

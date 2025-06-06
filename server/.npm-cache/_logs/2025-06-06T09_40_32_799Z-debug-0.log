@@ -1,0 +1,30 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.15.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\GG\Desktop\stagequest site 14-05\server\.npmrc
+5 warn config optional Use `--omit=optional` to exclude optional dependencies, or
+5 warn config `--include=optional` to include them.
+5 warn config
+5 warn config       Default value does install optional deps unless otherwise omitted.
+6 silly config load:file:C:\Users\GG\.npmrc
+7 silly config load:file:C:\Users\GG\AppData\Roaming\npm\etc\npmrc
+8 verbose title npm install express cors path
+9 verbose argv "install" "express" "cors" "path"
+10 verbose logfile logs-max:10 dir:C:\Users\GG\Desktop\stagequest site 14-05\server\.npm-cache\_logs\2025-06-06T09_40_32_799Z-
+11 verbose logfile C:\Users\GG\Desktop\stagequest site 14-05\server\.npm-cache\_logs\2025-06-06T09_40_32_799Z-debug-0.log
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 silly idealTree buildDeps
+15 silly fetch manifest axios@^1.6.2
+16 silly packumentCache full:https://registry.npmjs.org/axios cache-miss
+17 http fetch GET https://registry.npmjs.org/npm attempt 1 failed with ETIMEDOUT
+18 http fetch GET https://registry.npmjs.org/axios attempt 1 failed with ETIMEDOUT
+19 http fetch GET https://registry.npmjs.org/npm attempt 2 failed with ETIMEDOUT
+20 http fetch GET https://registry.npmjs.org/axios attempt 2 failed with ETIMEDOUT
+21 http fetch GET https://registry.npmjs.org/npm attempt 3 failed with ETIMEDOUT
+22 http fetch GET https://registry.npmjs.org/axios attempt 3 failed with ETIMEDOUT
+23 silly fetch manifest cors@^2.8.5
+24 silly packumentCache full:https://registry.npmjs.org/cors cache-miss
+25 http fetch GET https://registry.npmjs.org/cors attempt 1 failed with ETIMEDOUT
+26 http fetch GET https://registry.npmjs.org/cors attempt 2 failed with ETIMEDOUT

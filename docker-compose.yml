@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   # Frontend service using custom Dockerfile
   frontend:
@@ -22,7 +20,7 @@ services:
       - REACT_APP_AZURE_TENANT_ID=${REACT_APP_AZURE_TENANT_ID}
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      test: ["CMD", "wget", "-q", "-O", "-", "http://localhost/health"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -48,14 +46,12 @@ services:
       - stagequest-network
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      test: ["CMD", "wget", "-q", "-O", "-", "http://localhost:3000/api/health"]
       interval: 30s
-      timeout: 10s
+      timeout: 15s
       retries: 3
+      start_period: 30s
 
 networks:
   stagequest-network:
     driver: bridge
-
-volumes:
-  api-data:

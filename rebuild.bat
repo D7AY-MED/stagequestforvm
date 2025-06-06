@@ -115,9 +115,7 @@ if %USE_ALT_PORT%==1 (
     echo Step 2.2: Modifying docker-compose.yml to use alternative port
     
     rem Create a temporary file with the modified port
-    echo version: '3' > docker-compose.tmp.yml
-    echo. >> docker-compose.tmp.yml
-    echo services: >> docker-compose.tmp.yml
+    echo services: > docker-compose.tmp.yml
     echo   frontend: >> docker-compose.tmp.yml
     echo     build: >> docker-compose.tmp.yml
     echo       context: . >> docker-compose.tmp.yml
@@ -163,7 +161,7 @@ if %USE_ALT_PORT%==1 (
 )
 
 echo.
-echo Step 2.3: Creating API server package.json
+echo Step 2.3: Creating minimal API server package.json
 
 echo {> server\package.json
 echo   "name": "stagequest-api",>> server\package.json
@@ -179,45 +177,90 @@ echo     "axios": "^1.6.2",>> server\package.json
 echo     "cors": "^2.8.5",>> server\package.json
 echo     "express": "^4.18.2">> server\package.json
 echo   },>> server\package.json
-echo   "devDependencies": {>> server\package.json
-echo     "nodemon": "^3.0.1">> server\package.json
+echo   "engines": {>> server\package.json
+echo     "node": ">=18.0.0">> server\package.json
 echo   }>> server\package.json
 echo }>> server\package.json
 
 echo.
-echo Step 2.4: Creating API server Dockerfile
+echo Step 2.4: Creating simplified API server index.js
+echo // Simple Express server with registration endpoint> server\index.js
+echo const express = require('express');>> server\index.js
+echo const cors = require('cors');>> server\index.js
+echo const axios = require('axios');>> server\index.js
+echo.>> server\index.js
+echo const app = express();>> server\index.js
+echo const port = process.env.PORT || 3000;>> server\index.js
+echo.>> server\index.js
+echo // Middleware>> server\index.js
+echo app.use(cors());>> server\index.js
+echo app.use(express.json());>> server\index.js
+echo.>> server\index.js
+echo // Health check endpoint>> server\index.js
+echo app.get('/api/health', (req, res) => {>> server\index.js
+echo   res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });>> server\index.js
+echo });>> server\index.js
+echo.>> server\index.js
+echo // Basic registration endpoint>> server\index.js
+echo app.post('/api/register', (req, res) => {>> server\index.js
+echo   console.log('Registration request received:', req.body);>> server\index.js
+echo   const { name, company, email, password } = req.body;>> server\index.js
+echo.>> server\index.js
+echo   // Validate required fields>> server\index.js
+echo   if (!name || !company || !email || !password) {>> server\index.js
+echo     return res.status(400).json({ >> server\index.js
+echo       error: `Missing required fields: ${!name ? 'name' : ''}${!email ? ', email' : ''}${!password ? ', password' : ''}`,>> server\index.js
+echo       details: { missingFields: [!name ? 'name' : null, !email ? 'email' : null, !password ? 'password' : null].filter(Boolean) }>> server\index.js
+echo     });>> server\index.js
+echo   }>> server\index.js
+echo.>> server\index.js
+echo   // Mock successful response>> server\index.js
+echo   res.status(201).json({>> server\index.js
+echo     success: true,>> server\index.js
+echo     token: `mock-token-${Date.now()}`,>> server\index.js
+echo     user: {>> server\index.js
+echo       id: `mock-${Date.now()}`,>> server\index.js
+echo       name,>> server\index.js
+echo       email,>> server\index.js
+echo       company,>> server\index.js
+echo       role: 'recruiter'>> server\index.js
+echo     }>> server\index.js
+echo   });>> server\index.js
+echo });>> server\index.js
+echo.>> server\index.js
+echo // Start server>> server\index.js
+echo app.listen(port, process.env.HOST || 'localhost', () => {>> server\index.js
+echo   console.log(`API server running on port ${port}`);>> server\index.js
+echo });>> server\index.js
+
+echo.
+echo Step 2.5: Creating optimized API server Dockerfile
 
 echo FROM node:18-alpine> server\Dockerfile
 echo.>> server\Dockerfile
 echo # Create app directory>> server\Dockerfile
 echo WORKDIR /app>> server\Dockerfile
 echo.>> server\Dockerfile
-echo # Copy package.json and package-lock.json>> server\Dockerfile
+echo # Copy package files first>> server\Dockerfile
 echo COPY package*.json ./>> server\Dockerfile
 echo.>> server\Dockerfile
-echo # Install dependencies>> server\Dockerfile
+echo # Install dependencies without any extra configuration>> server\Dockerfile
 echo RUN npm install --production>> server\Dockerfile
 echo.>> server\Dockerfile
 echo # Copy application source>> server\Dockerfile
 echo COPY . .>> server\Dockerfile
 echo.>> server\Dockerfile
-echo # Set development mode initially>> server\Dockerfile
-echo ENV NODE_ENV=development>> server\Dockerfile
-echo.>> server\Dockerfile
-echo # Set host to listen on all interfaces>> server\Dockerfile
+echo # Set production mode>> server\Dockerfile
+echo ENV NODE_ENV=production>> server\Dockerfile
 echo ENV HOST=0.0.0.0>> server\Dockerfile
 echo.>> server\Dockerfile
 echo # Default port>> server\Dockerfile
 echo EXPOSE 3000>> server\Dockerfile
 echo.>> server\Dockerfile
-echo # Health check>> server\Dockerfile
-echo HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \>> server\Dockerfile
-echo     CMD wget -q -O - http://localhost:3000/api/health ^|^| exit 1>> server\Dockerfile
-echo.>> server\Dockerfile
 echo # Start server>> server\Dockerfile
 echo CMD ["node", "index.js"]>> server\Dockerfile
 
-echo Server configuration files created.
+echo Server configuration files created with simpler Docker setup.
 
 if %SKIP_NPM_INSTALL%==0 (
     echo.
@@ -250,27 +293,39 @@ if %SKIP_FRONTEND_BUILD%==0 (
 )
 
 echo.
-echo Step 6: Building and starting Docker containers with increased timeout
-set COMPOSE_HTTP_TIMEOUT=300
-docker-compose up -d --build
+echo Step 6: Building and starting Docker containers
+echo Setting Docker build parameters for better performance...
+set DOCKER_BUILDKIT=1
+set COMPOSE_DOCKER_CLI_BUILD=1
+set COMPOSE_HTTP_TIMEOUT=600
+echo Starting build with increased timeouts...
+docker-compose build --no-cache --progress=plain
 if %ERRORLEVEL% NEQ 0 (
     echo Error building Docker containers!
     if %CONTINUE_ON_ERROR%==0 exit /b %ERRORLEVEL%
 )
 
 echo.
-echo Step 7: Checking container status
-timeout /t 5 > nul
+echo Step 7: Starting containers
+docker-compose up -d
+if %ERRORLEVEL% NEQ 0 (
+    echo Error starting containers!
+    if %CONTINUE_ON_ERROR%==0 exit /b %ERRORLEVEL%
+)
+
+echo.
+echo Step 8: Checking container status
+timeout /t 10 > nul
 docker ps
 echo.
 
-echo Step 8: Checking container logs
+echo Step 9: Checking container logs
 echo Frontend logs:
-docker logs stagequest-frontend
+docker logs stagequest-frontend --tail 20
 echo.
 
 echo API logs:
-docker logs stagequest-api
+docker logs stagequest-api --tail 20
 echo.
 
 if %USE_ALT_PORT%==1 (
@@ -287,10 +342,10 @@ echo.
 echo To view logs: docker-compose logs -f
 echo To check container status: docker-compose ps
 echo.
-echo If you're still having issues, try these options:
-echo - rebuild.bat --fix-frontend        (Simplify frontend container config)
-echo - rebuild.bat --alt-port            (Use port 8080 instead of 80)
-echo - rebuild.bat --skip-frontend       (Skip frontend build)
+echo If you're still having issues, try these troubleshooting steps:
+echo 1. Run 'docker logs stagequest-api' to see detailed API errors
+echo 2. Run 'docker logs stagequest-frontend' to see frontend errors
+echo 3. Try rebuilding with: rebuild.bat --fix-frontend --alt-port
 echo.
 echo To check if port 80 is already in use:
 echo netstat -ano | findstr ":80"
